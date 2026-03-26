@@ -26,15 +26,18 @@ const Navbar = () => {
   ];
 
   return (
-    <nav 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 backdrop-blur-md py-3 shadow-md' : 'bg-transparent py-6'
-      }`}
-    >
+    <nav className="fixed w-full z-50">
+      <div className="bg-secondary text-white text-center py-1.5 text-[10px] font-bold uppercase tracking-widest">
+        This is a demo website
+      </div>
+      <div 
+        className={`transition-all duration-300 ${
+          scrolled ? 'bg-white/90 backdrop-blur-md py-3 shadow-md' : 'bg-transparent py-6'
+        }`}
+      >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#home" className="flex items-center gap-2 group">
-          {/* <UtensilsCrossed className={`w-8 h-8 ${scrolled ? 'text-primary' : 'text-white'}`} /> */}
-          <img src="/images/logo.jpg" alt="logo" className="w-12 h-12 rounded-full" />
+          <UtensilsCrossed className={`w-8 h-8 ${scrolled ? 'text-primary' : 'text-white'}`} />
           <span className={`text-2xl font-serif font-bold tracking-tight ${scrolled ? 'text-primary' : 'text-white'}`}>
             Garden Ship
           </span>
@@ -73,6 +76,8 @@ const Navbar = () => {
           )}
         </button>
       </div>
+      </div>
+      
 
       {/* Mobile Nav */}
       <AnimatePresence>
