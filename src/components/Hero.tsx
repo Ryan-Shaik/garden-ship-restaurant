@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -34,18 +35,17 @@ const Hero = () => {
             From mouthwatering cuisine to seamless events, we make every moment special.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#menu" 
+            <Link
+              to="/menu"
               className="bg-secondary text-white px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-primary transition-all duration-300"
             >
               Explore Menu
-            </a>
-            <a 
-              href="#reservation" 
+            </Link>
+            <Link to="/reservation"
               className="border-2 border-white text-white px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-primary transition-all duration-300"
             >
               Call Now
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

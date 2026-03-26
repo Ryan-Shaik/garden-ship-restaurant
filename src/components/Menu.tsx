@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CATEGORIES, MENU_ITEMS } from '../constants';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   const [activeCategory, setActiveCategory] = useState(CATEGORIES[0].id);
@@ -94,12 +95,11 @@ const Menu = () => {
             We offer special platters and customized menus for family events and corporate gatherings. 
             Contact us to learn more about our group dining options.
           </p>
-          <a 
-            href="#reservation" 
+          <Link to="/reservation"
             className="inline-block bg-secondary text-white px-10 py-3 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-primary transition-all duration-300"
           >
             Inquire Now
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { UtensilsCrossed, Facebook, Instagram, Twitter, ArrowUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -30,11 +31,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-serif font-bold mb-6">Quick Links</h4>
             <ul className="space-y-4 text-white/60">
-              <li><a href="#home" className="hover:text-secondary transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-secondary transition-colors">About Us</a></li>
-              <li><a href="#menu" className="hover:text-secondary transition-colors">Our Menu</a></li>
-              <li><a href="#reservation" className="hover:text-secondary transition-colors">Reservations</a></li>
-              <li><a href="#contact" className="hover:text-secondary transition-colors">Contact</a></li>
+              <li><Link to="/home" className="hover:text-secondary transition-colors">Home</Link></li>
+              <li><Link to="/about" className="hover:text-secondary transition-colors">About Us</Link></li>
+              <li><Link to="/menu" className="hover:text-secondary transition-colors">Our Menu</Link></li>
+              <li><Link to="/reservation" className="hover:text-secondary transition-colors">Reservations</Link></li>
+              <li><Link to="/contact" className="hover:text-secondary transition-colors">Contact</Link></li>
             </ul>
           </div>
 

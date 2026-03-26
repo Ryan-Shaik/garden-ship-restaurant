@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { FEATURED_DISHES } from '../constants';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FeaturedDishes = () => {
   return (
@@ -42,24 +43,24 @@ const FeaturedDishes = () => {
                 <p className="text-gray-500 text-sm mb-6 line-clamp-2">
                   {dish.description}
                 </p>
-                <a 
+                <Link to="/menu" 
                   href="#menu" 
                   className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-widest group-hover:text-secondary transition-colors"
                 >
                   View Details <ArrowRight className="w-4 h-4" />
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}
         </div>
 
         <div className="mt-16 text-center">
-          <a 
+          <Link to="/menu" 
             href="#menu" 
             className="inline-block bg-primary text-white px-12 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-secondary transition-all duration-300"
           >
             See Full Menu
-          </a>
+          </Link>
         </div>
       </div>
     </section>
