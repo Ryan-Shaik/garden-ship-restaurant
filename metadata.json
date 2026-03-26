@@ -1,0 +1,7 @@
+{
+  "name": "Garden Ship Restaurant version2",
+  "description": "A warm and welcoming restaurant in Dhaka, Bangladesh, serving a blend of Asian and Continental cuisine.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
